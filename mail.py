@@ -9,7 +9,7 @@ from email.utils import parseaddr, formataddr
 class Mail(object):
     def __init__(self):
         self.from_addr = 'yuanhao_wu@yeah.net'
-        self.password = 'NY1234567'  # 这里指的是授权码，而非邮箱登录密码
+        self.password = input('输入授权码')  # 这里指的是授权码，而非邮箱登录密码
         self.to_addr = '254138148@qq.com'
         self.smtp_server = 'smtp.yeah.net'
 
